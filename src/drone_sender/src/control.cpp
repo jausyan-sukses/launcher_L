@@ -28,7 +28,7 @@ arming_client_ = this->create_client<mavros_msgs::srv::CommandBool>("/mavros/cmd
     cmd_sub_ = this->create_subscription<std_msgs::msg::String>(  
         "/teleop_cmd", 10, std::bind(&TeleopDrone::commandCallback, this, std::placeholders::_1));  
 
-    RCLCPP_INFO(this->get_logger(), "Teleop Drone Node Started!");  
+    RCLCPP_INFO(this->get_logger(), "Mission launcher Node Started!");  
 }
 
 private:
