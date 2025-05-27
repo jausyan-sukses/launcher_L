@@ -11,7 +11,7 @@ public:
     TeleopSequencer() : Node("teleop_sequencer")
     {
         publisher_ = this->create_publisher<std_msgs::msg::String>("/teleop_cmd", 10);
-        RCLCPP_INFO(this->get_logger(), "Teleop Sequencer Node Started");
+        RCLCPP_INFO(this->get_logger(), "Mission Control Node Started");
 
         timer_ = this->create_wall_timer(1s, std::bind(&TeleopSequencer::sendNextCommand, this));
     }
