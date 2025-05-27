@@ -1,0 +1,22 @@
+[0.025s] Invoking command in '/home/el-system/launcher_l/build/drone_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/launcher_l/build/drone_sender -- -j12 -l12
+[0.072s] [100%] Built target control
+[0.090s] Invoked command in '/home/el-system/launcher_l/build/drone_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/launcher_l/build/drone_sender -- -j12 -l12
+[0.093s] Invoking command in '/home/el-system/launcher_l/build/drone_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/el-system/launcher_l/build/drone_sender
+[0.101s] -- Install configuration: ""
+[0.102s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/lib/drone_sender/control
+[0.102s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/ament_index/resource_index/package_run_dependencies/drone_sender
+[0.102s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/ament_index/resource_index/parent_prefix_path/drone_sender
+[0.102s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/environment/ament_prefix_path.sh
+[0.103s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/environment/ament_prefix_path.dsv
+[0.103s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/environment/path.sh
+[0.104s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/environment/path.dsv
+[0.104s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/local_setup.bash
+[0.104s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/local_setup.sh
+[0.104s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/local_setup.zsh
+[0.104s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/local_setup.dsv
+[0.105s] -- Installing: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/package.dsv
+[0.105s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/ament_index/resource_index/packages/drone_sender
+[0.105s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/cmake/drone_senderConfig.cmake
+[0.105s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/cmake/drone_senderConfig-version.cmake
+[0.106s] -- Up-to-date: /home/el-system/launcher_l/install/drone_sender/share/drone_sender/package.xml
+[0.116s] Invoked command in '/home/el-system/launcher_l/build/drone_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/el-system/launcher_l/build/drone_sender

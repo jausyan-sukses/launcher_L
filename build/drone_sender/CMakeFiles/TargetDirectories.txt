@@ -1,0 +1,10 @@
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/install/strip.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/install/local.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/install.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/list_install_components.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/rebuild_cache.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/control.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/edit_cache.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/test.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/drone_sender_uninstall.dir
+/home/el-system/launcher_l/build/drone_sender/CMakeFiles/uninstall.dir

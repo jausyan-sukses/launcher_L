@@ -1,0 +1,6 @@
+Invoking command in '/home/el-system/launcher_l/build/drone_sender': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/el-system/launcher_l/src/drone_sender -DCMAKE_INSTALL_PREFIX=/home/el-system/launcher_l/install/drone_sender
+Invoked command in '/home/el-system/launcher_l/build/drone_sender' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/el-system/launcher_l/src/drone_sender -DCMAKE_INSTALL_PREFIX=/home/el-system/launcher_l/install/drone_sender
+Invoking command in '/home/el-system/launcher_l/build/drone_sender': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/el-system/launcher_l/build/drone_sender -- -j12 -l12
+Invoked command in '/home/el-system/launcher_l/build/drone_sender' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/el-system/launcher_l/build/drone_sender -- -j12 -l12
+Invoking command in '/home/el-system/launcher_l/build/drone_sender': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/el-system/launcher_l/build/drone_sender
+Invoked command in '/home/el-system/launcher_l/build/drone_sender' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/el-system/launcher_l/build/drone_sender
