@@ -11,7 +11,7 @@ public:
     TeleopSequencer() : Node("teleop_sequencer")
     {
         publisher_ = this->create_publisher<std_msgs::msg::String>("/teleop_cmd", 10);
-        RCLCPP_INFO(this->get_logger(), "Mission Control Node Started");
+        RCLCPP_INFO(this->get_logger(), "Teleop Sequencer Node Started");
 
         timer_ = this->create_wall_timer(1s, std::bind(&TeleopSequencer::sendNextCommand, this));
     }
@@ -24,9 +24,24 @@ private:
     std::vector<std::pair<char, std::chrono::seconds>> sequence_ = {
         {'M', 2s},   // Set mode GUIDED
         {'T', 6s},   // Arm and Takeoff
-        {'W', 10s},  // Maju pertama
+        {'W', 5s},  // Maju pertama
+        {'L', 13s},  // ambil payload
+        {'M', 13s},  // terbang lagi
+        {'T', 13s}, // takeoff lagi
+        {'W', 5s}, // maju kedua
         {'E', 3s},   // Yaw ke kiri 90 derajat,   // Maju lagi
-        {'A', 10s},  // Maju lagi (setelah rotasi)
+        {'A', 3s},   // maju
+        {'A', 3s},
+        {'F', 5s}, // drop payload
+        {'R', 3s},
+        {'D', 3s},
+        {'L', 10s}, // ambil payload lagi
+        {'M', 10s}, // terbang lagi
+        {'T', 10s}, // takeoff lagi
+        {'A', 3s},  // Maju lagi (setelah rotasi)
+        {'F', 3s},
+        {'R', 3s},
+        {'A', 3s},
         {'L', 0s}    // Landing
     };
 
