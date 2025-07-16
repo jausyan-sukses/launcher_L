@@ -28,7 +28,7 @@ arming_client_ = this->create_client<mavros_msgs::srv::CommandBool>("/mavros/cmd
     cmd_sub_ = this->create_subscription<std_msgs::msg::String>(  
         "/teleop_cmd", 10, std::bind(&TeleopDrone::commandCallback, this, std::placeholders::_1));  
 
-    RCLCPP_INFO(this->get_logger(), "Mission launcher Node Started!");  
+    RCLCPP_INFO(this->get_logger(), "Teleop Drone Node Started!");  
 }
 
 private:
@@ -61,11 +61,17 @@ void commandCallback(const std_msgs::msg::String::SharedPtr msg)
     } else if (key == 'Z') {  
         disarm();  
     } else if (key == 'W') {  
-        publishVelocity(1.0, 0.0, 0.0, 0.0);  // Maju  
+        publishVelocity(0.0, -1.0, 0.0, 0.0);  // Maju  
     } else if (key == 'E') {  
         publishVelocity(0.0, 0.0, 0.0, 0.5);  // Stop  
     }else if (key == 'A') {  
-        publishVelocity(0.0, 1.0, 0.0, 0.0);  //  
+        publishVelocity(1.0, 0.0, 0.0, 0.0);  //  
+    } else if (key == 'F') {
+        publishVelocity(0.0, 0.0, -0.2, 0.0);
+    } else if (key == 'R') {
+        publishVelocity(0.0, 0.0, 0.2, 0.0);  // Naik
+    } else if (key == 'D') {
+        publishVelocity(-1.0, 0.0, 0.0, 0.0);  // Mundur
     } else {  
         RCLCPP_WARN(this->get_logger(), "Unknown command: %c", key);  
     }  
@@ -107,7 +113,7 @@ void armAndTakeoff()
     arming_client_->async_send_request(arm_request);  
     RCLCPP_INFO(this->get_logger(), "Arming request sent.");  
 
-    rclcpp::sleep_for(2s);  
+    rclcpp::sleep_for(1s);  
 
     auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();  
     takeoff_request->altitude = 1.0;  
